@@ -1,96 +1,23 @@
-# Development Lab Website
-
-## Introduction  
-The **Development Lab Website** is the official platform for the development club of [Your College Name]. It serves as a comprehensive portal for club-related activities, including blogs, projects, events, and team details. The website is designed to be interactive, user-friendly, and easily maintainable.  
-
----  
-
-## Features  
-- **Dynamic Pages**:  
-  - **Blogs**: Share updates, tutorials, and news.  
-  - **Projects**: Showcase ongoing and completed projects.  
-  - **Team**: Display the current members and alumni of the club.  
-  - **Timeline**: Highlight past and upcoming events.  
-  - **Gallery**: A curated collection of photos from events.  
-- **Responsive Design**: Ensures seamless experience across devices.  
-- **Admin Functionality**: Manage content, blogs, and media efficiently.  
-- **API-Driven Backend**: Enables dynamic content updates.  
-
----  
-
-## Tech Stack  
-
-### Frontend  
-- **Framework**: [Next.js](https://nextjs.org/) (TypeScript)  
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/), CSS Modules  
-
-### Backend  
-- **Framework**: [Django](https://www.djangoproject.com/)  
-- **Database**: SQLite  
-- **API Development**: Django REST Framework  
-
----  
-
-## Installation and Setup  
-
-### Prerequisites  
-- **Frontend**: Node.js (v16 or higher)  
-- **Backend**: Python (v3.8 or higher)  
-
-### Frontend Setup  
-1. Navigate to the `frontend` directory:  
-   ```bash
-   cd frontend
-   ```  
-2. Install dependencies:  
-   ```bash
-   npm install
-   ```  
-3. Run the development server:  
-   ```bash
-   npm run dev
-   ```
-
-### Backend Setup  
-1. Navigate to the `server` directory:  
-   ```bash
-   cd server
-   ```  
-2. Create and configure the `.env` file based on `.env.example` to set environment variables (e.g., secret keys).  
-3. Install dependencies:  
-   ```bash
-   pip install -r requirements.txt
-   ```  
-4. Apply migrations to initialize the database:  
-   ```bash
-   python manage.py migrate
-   ```  
-5. Start the development server:  
-   ```bash
-   python manage.py runserver
-   ```  
-
----  
-
-## Project Structure  
-
-### Frontend  
-```plaintext
-frontend/
-├── app/                 # Dynamic and static pages
-├── components/          # Reusable UI components
-├── public/              # Static assets (images, icons, etc.)
-├── styles/              # Tailwind and CSS modules
-└── next.config.mjs      # Next.js configuration
-```  
-
-### Backend  
-```plaintext
-server/
-├── api/                 # Django app containing models, views, serializers
-├── server/              # Core Django settings and URLs
-├── db.sqlite3           # Database file
-└── manage.py            # Django management script
-```  
-
----
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Getting Started
+First, run the development server:
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Learn More
+To learn more about Next.js, take a look at the following resources:
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploy on Vercel
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
